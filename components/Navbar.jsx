@@ -19,6 +19,10 @@ function Navbar() {
     setShowNav(!showNav);
   };
 
+  const onClick = () => {
+    setShowNav(false);
+  };
+
   const { data: session } = useSession();
 
   return (
@@ -192,16 +196,16 @@ function Navbar() {
       {/* Mobile Menu */}
       <div className={showNav ? "md:hidden fixed top-0 left-0 w-full h-screen bg-[#0e0e10] flex justify-center items-center ease-n duration-300" : "md:hidden fixed top-[-100%] left-0 w-full h-screen bg-[#0e0e10] flex justify-center items-center ease-n duration-300"}>
         <ul className="text-center">
-          <li className="p-4 text-3xl font-bold">
+          <li onClick={onClick} className="p-4 text-3xl font-bold">
             <Link href="/">Home</Link>
           </li>
-          <li className="p-4 text-3xl font-bold">
+          <li onClick={onClick} className="p-4 text-3xl font-bold">
             <Link href="/">Live Channels</Link>
           </li>
-          <li className="p-4 text-3xl font-bold">
+          <li onClick={onClick} className="p-4 text-3xl font-bold">
             <Link href="/">Top Categories</Link>
           </li>
-          <li className="p-4 text-3xl font-bold">
+          <li onClick={onClick} className="p-4 text-3xl font-bold">
             <Link href="/account">Account</Link>
           </li>
         </ul>
