@@ -1,6 +1,7 @@
 import Hero from "./Hero";
-import IconBar from "./IconBar";
 import LiveChannels from "./LiveChannels";
+import IconBar from "./IconBar";
+import Categories from "./Categories";
 
 const Main = () => {
   return (
@@ -8,6 +9,7 @@ const Main = () => {
       <Hero />
       <LiveChannels />
       <IconBar />
+      <Categories />
     </div>
   );
 }

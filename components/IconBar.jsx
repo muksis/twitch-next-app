@@ -13,27 +13,27 @@ const IconBar = () => {
         {/* Grid Item */}
         <div className="w-full h-[50px] bg-[#9147ff] flex justify-between items-center px-4 rounded">
           <p className="text-2xl font-bold">Games</p>
-          <Image src={Remote} alt="/" />
+          <Image src={Remote} alt="remote" />
         </div>
         {/* Grid Item */}
         <div className="w-full h-[50px] bg-[#9147ff] flex justify-between items-center px-4 rounded">
           <p className="text-2xl font-bold">IRL</p>
-          <Image src={Mic} alt="/" />
+          <Image src={Mic} alt="mic" />
         </div>
         {/* Grid Item */}
         <div className="w-full h-[50px] bg-[#9147ff] flex justify-between items-center px-4 rounded">
           <p className="text-2xl font-bold">Music</p>
-          <Image src={Headphones} alt="/" />
+          <Image src={Headphones} alt="headphones" />
         </div>
         {/* Grid Item */}
         <div className="w-full h-[50px] bg-[#9147ff] flex justify-between items-center px-4 rounded">
           <p className="text-2xl font-bold">Esports</p>
-          <Image src={Trophy} alt="/" />
+          <Image src={Trophy} alt="trophy" />
         </div>
         {/* Grid Item */}
         <div className="w-full h-[50px] bg-[#9147ff] flex justify-between items-center px-4 rounded">
           <p className="text-2xl font-bold">Creative</p>
-          <Image src={Paint} alt="/" />
+          <Image src={Paint} alt="paint" />
         </div>
       </div>
     </div>

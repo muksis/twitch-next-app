@@ -1,6 +1,6 @@
 import Image from "next/image";
 
-const LiveChannelItem = ({img, profile_img, title, user, game}) => {
+const LiveChannelItem = ({ img, profile_img, title, user, game }) => {
   return (
     <div className="p-2">
       <Image src={img} />
