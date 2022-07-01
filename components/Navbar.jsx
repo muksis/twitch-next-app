@@ -9,7 +9,7 @@ import Logo from "../public/assets/logo.png";
 
 
 function classNames(...classes) {
-  return classes.filter(Boolean).join(' ');
+  return classes.filter(Boolean).join(" ");
 }
 
 const Navbar = () => {
@@ -36,8 +36,8 @@ const Navbar = () => {
         </Link>
         <p className="p-4">Browse</p>
         <div className="p-4">
-          <Menu as='div' className='relative text-left'>
-            <div className='flex'>
+          <Menu as="div" className="relative text-left">
+            <div className="flex">
               <Menu.Button>
                 <BsThreeDotsVertical size={20} />
               </Menu.Button>
@@ -45,24 +45,24 @@ const Navbar = () => {
 
             <Transition
               as={Fragment}
-              enter='transition ease-out duration-100'
-              enterFrom='transform opacity-0 scale-95'
-              enterTo='transform opacity-100 scale-100'
-              leave='transition ease-in duration-75'
-              leaveFrom='transform opacity-100 scale-100'
-              leaveTo='transform opacity-0 scale-95'
+              enter="transition ease-out duration-100"
+              enterFrom="transform opacity-0 scale-95"
+              enterTo="transform opacity-100 scale-100"
+              leave="transition ease-in duration-75"
+              leaveFrom="transform opacity-100 scale-100"
+              leaveTo="transform opacity-0 scale-95"
             >
-              <Menu.Items className='origin-top-right absolute left-0 mt-2 w-56 rounded-md shadow-lg bg-[#0e0e10] ring-1 ring-white ring-opacity-5 focus:outline-none'>
-                <div className='py-1'>
+              <Menu.Items className="origin-top-right absolute left-0 mt-2 w-56 rounded-md shadow-lg bg-[#0e0e10] ring-1 ring-white ring-opacity-5 focus:outline-none">
+                <div className="py-1">
                   <Menu.Item>
                     {({ active }) => (
                       <a
-                        href='/account'
+                        href="/account"
                         className={classNames(
                           active
-                            ? 'bg-gray-500 text-gray-100'
-                            : 'text-gray-200',
-                          'block px-4 py-2 text-sm'
+                            ? "bg-gray-500 text-gray-100"
+                            : "text-gray-200",
+                          "block px-4 py-2 text-sm"
                         )}
                       >
                         Settings
@@ -72,12 +72,12 @@ const Navbar = () => {
                   <Menu.Item>
                     {({ active }) => (
                       <a
-                        href='#'
+                        href="#"
                         className={classNames(
                           active
-                            ? 'bg-gray-500 text-gray-100'
-                            : 'text-gray-200',
-                          'block px-4 py-2 text-sm'
+                            ? "bg-gray-500 text-gray-100"
+                            : "text-gray-200",
+                          "block px-4 py-2 text-sm"
                         )}
                       >
                         Support
@@ -87,12 +87,12 @@ const Navbar = () => {
                   <Menu.Item>
                     {({ active }) => (
                       <a
-                        href='#'
+                        href="#"
                         className={classNames(
                           active
-                            ? 'bg-gray-500 text-gray-100'
-                            : 'text-gray-200',
-                          'block px-4 py-2 text-sm'
+                            ? "bg-gray-500 text-gray-100"
+                            : "text-gray-200",
+                          "block px-4 py-2 text-sm"
                         )}
                       >
                         License
@@ -125,8 +125,8 @@ const Navbar = () => {
                 Welcome, {session.user.name}
               </p>
             </Link>
-            <Menu as='div' className='relative text-left'>
-              <div className='flex'>
+            <Menu as="div" className="relative text-left">
+              <div className="flex">
                 <Menu.Button>
                   <Image src={session.user.image} width="45" height="45" className="rounded-full" />
                 </Menu.Button>
@@ -134,24 +134,24 @@ const Navbar = () => {
 
               <Transition
                as={Fragment}
-                enter='transition ease-out duration-100'
-                enterFrom='transform opacity-0 scale-95'
-                enterTo='transform opacity-100 scale-100'
-                leave='transition ease-in duration-75'
-                leaveFrom='transform opacity-100 scale-100'
-                leaveTo='transform opacity-0 scale-95'
+                enter="transition ease-out duration-100"
+                enterFrom="transform opacity-0 scale-95"
+                enterTo="transform opacity-100 scale-100"
+                leave="transition ease-in duration-75"
+                leaveFrom="transform opacity-100 scale-100"
+                leaveTo="transform opacity-0 scale-95"
               >
-                <Menu.Items className='origin-top-right absolute right-0 mt-2 w-56 rounded-md shadow-lg bg-[#0e0e10] ring-1 ring-white ring-opacity-5 focus:outline-none'>
-                  <div className='py-1'>
+                <Menu.Items className="origin-top-right absolute right-0 mt-2 w-56 rounded-md shadow-lg bg-[#0e0e10] ring-1 ring-white ring-opacity-5 focus:outline-none">
+                  <div className="py-1">
                     <Menu.Item>
                       {({ active }) => (
                         <a
-                          href='/account'
+                          href="/account"
                           className={classNames(
                           active
-                            ? 'bg-gray-500 text-gray-100'
-                            : 'text-gray-200',
-                          'block px-4 py-2 text-sm'
+                            ? "bg-gray-500 text-gray-100"
+                            : "text-gray-200",
+                          "block px-4 py-2 text-sm"
                           )}
                         >
                           Account
@@ -164,9 +164,9 @@ const Navbar = () => {
                           onClick={() => signOut()}
                           className={classNames(
                           active
-                              ? 'bg-gray-500 text-gray-100'
-                              : 'text-gray-200',
-                                'block px-4 py-2 text-sm'
+                              ? "bg-gray-500 text-gray-100"
+                              : "text-gray-200",
+                                "block px-4 py-2 text-sm"
                           )}
                         >
                           Logout
@@ -200,10 +200,10 @@ const Navbar = () => {
             <Link href="/">Home</Link>
           </li>
           <li onClick={onClick} className="p-4 text-3xl font-bold">
-            <Link href="/">Live Channels</Link>
+            <Link href="/#live">Live Channels</Link>
           </li>
           <li onClick={onClick} className="p-4 text-3xl font-bold">
-            <Link href="/">Top Categories</Link>
+            <Link href="/#categories">Top Categories</Link>
           </li>
           <li onClick={onClick} className="p-4 text-3xl font-bold">
             <Link href="/account">Account</Link>

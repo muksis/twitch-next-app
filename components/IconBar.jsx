@@ -1,9 +1,9 @@
-import Remote from '../public/assets/remote.png';
-import Mic from '../public/assets/mic.png';
-import Headphones from '../public/assets/headphones.png';
-import Trophy from '../public/assets/trophy.png';
-import Paint from '../public/assets/paint.png';
-import Image from 'next/image';
+import Remote from "../public/assets/remote.png";
+import Mic from "../public/assets/mic.png";
+import Headphones from "../public/assets/headphones.png";
+import Trophy from "../public/assets/trophy.png";
+import Paint from "../public/assets/paint.png";
+import Image from "next/image";
 
 const IconBar = () => {
   return (
