@@ -12,7 +12,7 @@ function classNames(...classes) {
   return classes.filter(Boolean).join(' ');
 }
 
-function Navbar() {
+const Navbar = () => {
   const [showNav, setShowNav] = useState(false);
 
   const handleShowNav = () => {
